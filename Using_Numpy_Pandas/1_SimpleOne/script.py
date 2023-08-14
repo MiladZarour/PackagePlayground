@@ -84,3 +84,73 @@ merged_df.to_csv('output.csv', index=False)
 print("\nExported the DataFrame to 'output.csv'")
 
 print("\n=== END OF SCRIPT ===")
+
+
+
+'''
+OUTPUT>>>>>>>>>>>>
+Using Numpy Version: 1.25.2
+Using Pandas Version: 2.0.3
+
+=== NUMPY SECTION ===
+
+1D Array:
+[1 2 3 4 5]
+
+2D Array:
+[[1 2 3]
+ [4 5 6]
+ [7 8 9]]
+
+Sum of elements in arr1: 15
+Mean of elements in arr2: 5.0
+
+Reshaped arr2:
+[[1 2 3 4 5 6 7 8 9]]
+
+Slicing arr2 to get the first two rows:
+[[1 2 3]
+ [4 5 6]]
+
+=== PANDAS SECTION ===
+
+DataFrame:
+      Name  Age         City
+0    Alice   25     New York
+1      Bob   30  Los Angeles
+2  Charlie   22      Chicago
+
+Basic statistics of DataFrame:
+         Name        Age      City
+count       3   3.000000         3
+unique      3        NaN         3
+top     Alice        NaN  New York
+freq        1        NaN         1
+mean      NaN  25.666667       NaN
+std       NaN   4.041452       NaN
+min       NaN  22.000000       NaN
+25%       NaN  23.500000       NaN
+50%       NaN  25.000000       NaN
+75%       NaN  27.500000       NaN
+max       NaN  30.000000       NaN
+
+Filter people older than 25:
+  Name  Age         City
+1  Bob   30  Los Angeles
+
+Increment age by 1 using apply():
+      Name  Age         City
+0    Alice   26     New York
+1      Bob   31  Los Angeles
+2  Charlie   23      Chicago
+
+Merged DataFrame with Occupation:
+      Name  Age         City Occupation
+0    Alice   26     New York   Engineer
+1      Bob   31  Los Angeles     Doctor
+2  Charlie   23      Chicago     Writer
+
+Exported the DataFrame to 'output.csv'
+
+=== END OF SCRIPT ===
+'''
